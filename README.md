@@ -1,6 +1,6 @@
 # The Cadmus Companion
 
-![App Preview](/docs/ai-app.png)
+![App Preview](./public/docs/ai-app.png)
 
 Single-page interactive companion powered by **The Code of Cadmus** — self-mastery paths with optional OpenAI-powered responses. No login, no database, no payments. Ship as a hosted URL or as a static UI (see limitations below).
 
