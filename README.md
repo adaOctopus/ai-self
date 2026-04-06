@@ -88,4 +88,4 @@ Deploy to [Vercel](https://vercel.com) or any Node host that supports Next.js Ro
 
 ---
 
-*Powered by the book [THE CODE OF CADMUS](https://thecodeofcadmus.com)*
+*Powered by the book [THE CODE OF CADMUS](https://codeofcadmus.com)*

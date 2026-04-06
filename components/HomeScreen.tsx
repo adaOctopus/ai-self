@@ -169,7 +169,7 @@ export function HomeScreen({
       <footer className="mx-auto mt-12 max-w-5xl pb-8 text-center text-xs text-[var(--cadmus-text)]">
         Powered by the book{" "}
         <a
-          href="https://thecodeofcadmus.com"
+          href="https://codeofcadmus.com"
           className={cn(
             "font-semibold underline",
             colorful ? "text-emerald-800" : "text-[var(--cadmus-gold)]",
