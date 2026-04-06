@@ -1,6 +1,6 @@
 # The Cadmus Companion
 
-![App Preview](/home/gandalf/.cursor/projects/home-gandalf-Cardano-cardano-development-quantum-digital-product/assets/c__Users_tasos_AppData_Roaming_Cursor_User_workspaceStorage_d09e4b720ea2210e292810f7e76348af_images_image-db56fafb-d357-4da4-985a-021da08e1111.png)
+![App Preview](/docs/ai-app.png)
 
 Single-page interactive companion powered by **The Code of Cadmus** — self-mastery paths with optional OpenAI-powered responses. No login, no database, no payments. Ship as a hosted URL or as a static UI (see limitations below).
 
