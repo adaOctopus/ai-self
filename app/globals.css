@@ -1,0 +1,112 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+:root,
+[data-theme="minimal"] {
+  --cadmus-bg: #080808;
+  --cadmus-surface: #111111;
+  --cadmus-surface-raised: #1a1a1a;
+  --cadmus-border: #2a2a2a;
+  --cadmus-gold: #c49c3e;
+  --cadmus-gold-light: #d4ae52;
+  --cadmus-text: #f0ead6;
+  --cadmus-muted: #7a7670;
+  --cadmus-error: #c0392b;
+  --cadmus-accent: var(--cadmus-gold);
+  --cadmus-chip-bg: rgba(196, 156, 62, 0.12);
+  --cadmus-green: #16a34a;
+  --cadmus-green-hover: #15803d;
+}
+
+[data-theme="colorful"] {
+  --cadmus-bg: #ffffff;
+  --cadmus-surface: #f4f4f5;
+  --cadmus-surface-raised: #e4e4e7;
+  --cadmus-border: #d4d4d8;
+  --cadmus-gold: #c49c3e;
+  --cadmus-gold-light: #d4ae52;
+  --cadmus-text: #0a0a0a;
+  --cadmus-muted: #52525b;
+  --cadmus-error: #c0392b;
+  --cadmus-accent: var(--cadmus-green);
+  --cadmus-chip-bg: rgba(22, 163, 74, 0.12);
+  --cadmus-green: #16a34a;
+  --cadmus-green-hover: #15803d;
+}
+
+@theme inline {
+  --color-cadmus-bg: var(--cadmus-bg);
+  --color-cadmus-surface: var(--cadmus-surface);
+  --color-cadmus-surface-raised: var(--cadmus-surface-raised);
+  --color-cadmus-border: var(--cadmus-border);
+  --color-cadmus-gold: var(--cadmus-gold);
+  --color-cadmus-gold-light: var(--cadmus-gold-light);
+  --color-cadmus-text: var(--cadmus-text);
+  --color-cadmus-muted: var(--cadmus-muted);
+  --color-cadmus-error: var(--cadmus-error);
+  --font-sans: var(--font-sans-stack);
+}
+
+@keyframes typing {
+  0%,
+  100% {
+    opacity: 0.35;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-typing {
+  animation: typing 1.2s steps(3, end) infinite;
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-in-out both;
+}
+
+.animate-slide-up {
+  animation: slideUp 0.3s ease-out both;
+}
+
+html {
+  min-height: 100%;
+  min-height: 100dvh;
+}
+
+body {
+  background: var(--cadmus-bg);
+  color: var(--cadmus-text);
+  font-family: var(--font-sans-stack);
+  font-feature-settings: "kern" 1, "liga" 1;
+}
+
+@media print {
+  body {
+    background: #fff !important;
+    color: #111 !important;
+  }
+  .no-print {
+    display: none !important;
+  }
+}
